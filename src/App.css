@@ -1,38 +1,136 @@
 .App {
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.outer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./i2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./i2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.info img {
+  height: auto;
+  width: 20%;
+}
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  border-radius: 20em;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  text-align: center;
+}
+.info .tempretures {
+  margin-top: 10vh;
+  margin-right: 15vw;
+}
+.farenheit {
+  font-size: 7vmin;
+  font-weight: 700;
+}
+.celcius {
+  text-align: left;
+  font-size: 3vmin;
+}
+.info .description {
+  margin-top: 4vw;
+  margin-right: 7vw;
+}
+.description {
+  font-size: 2vmin;
+  font-weight: 500;
+  padding-top: 1.5em;
+  text-align: left;
+}
+.goBackButton {
+  margin-top: 2em;
+  height: 34%;
+  width: 100%;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.inputs input {
+  margin-top: 2em;
+}
+.submit {
+  margin-top: 2em;
+  width: 75%;
+  text-align: center;
+}
+.goBackButton button {
+  width: 30%;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 0.7em;
+  height: 3.5vh;
+  font-size: 2vmin;
+  box-shadow: 0 1px 1px rgb(135, 206, 235), 0 2px 2px rgb(135, 206, 235),
+    0 4px 4px rgb(135, 206, 235), 0 8px 8px rgb(135, 206, 235),
+    0 16px 16px rgb(135, 206, 235);
+}
+.inputs input {
+  margin-left: 25%;
+  margin-bottom: 3vh;
+  width: 50%;
+  color: black;
+  border: none;
+  border-radius: 0.7em;
+  height: 3.5vh;
+  font-size: 2vmin;
+  box-shadow: 0 1px 1px rgb(135, 206, 235), 0 2px 2px rgb(135, 206, 235),
+    0 4px 4px rgb(135, 206, 235), 0 8px 8px rgb(135, 206, 235),
+    0 16px 16px rgb(135, 206, 235);
+}
+.submit button {
+  margin-bottom: 3vh;
+  width: 50%;
+  color: black;
+  background-color: rgb(135, 206, 235);
+  border: none;
+  border-radius: 0.7em;
+  height: 3.5vh;
+  font-size: 2vmin;
+  box-shadow: 0 1px 1px rgb(135, 206, 235), 0 2px 2px rgb(135, 206, 235),
+    0 4px 4px rgb(135, 206, 235), 0 8px 8px rgb(135, 206, 235),
+    0 16px 16px rgb(135, 206, 235);
+}
+.submit button:hover {
+  animation: pulsate 1s ease-in-out;
+  cursor: pointer;
+}
+.goBackButton button:hover {
+  animation: pulsate 1s ease-in-out;
+  cursor: pointer;
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
   }
 }
