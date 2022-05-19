@@ -14,7 +14,7 @@ const Info = ({ route, navigation }, props) => {
   const getWeatherData = (city, country) => {
     axios({
       method: "GET",
-      url: `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=5089d726ee43dfaec5e713d460b0d6d9`,
+      url: `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=5089d726ee43dfaec5e713d460b0d6d9`,
     })
       .then((response) => {
         console.log(response.data.main.temp);
@@ -46,7 +46,7 @@ const Info = ({ route, navigation }, props) => {
         <div className="screen">
           <div className="info">
             <img
-              src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
               alt="click the button to get the weather icon"
             />
             <div className="tempretures">
